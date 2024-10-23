@@ -224,7 +224,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.samsung.hardware.tlc.ucm</name>
-        <version>1.0</version>
+        <version>2.0</version>
         <interface>
             <name>ISehUcm</name>
             <instance>default</instance>
@@ -232,7 +232,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.samsung.hardware.vibrator</name>
-        <version>2.0</version>
+        <version>2.1</version>
         <interface>
             <name>ISehVibrator</name>
             <instance>default</instance>
@@ -240,7 +240,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.samsung.hardware.wifi.hostapd</name>
-        <version>2.0</version>
+        <version>2.1</version>
         <interface>
             <name>ISehHostapd</name>
             <instance>default</instance>
@@ -256,7 +256,7 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.samsung.hardware.wifi</name>
-        <version>2.0</version>
+        <version>2.1</version>
         <interface>
             <name>ISehWifi</name>
             <instance>default</instance>
@@ -267,6 +267,70 @@
         <version>1.0</version>
         <interface>
             <name>Iwvkprov_server</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.biometrics.fingerprint</name>
+        <transport>hwbinder</transport>
+        <version>3.0</version>
+        <interface>
+            <name>ISehBiometricsFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.health</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISehHealth</name>
+            <instance>sehhealth</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.light</name>
+        <transport>hwbinder</transport>
+        <version>3.0</version>
+        <interface>
+            <name>ISehLight</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.nfc</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ISehNfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.security.widevine.keyprovisioning</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISehWidevineKeyProvisioning</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+
+    <hal format="hidl">
+        <name>vendor.trustonic.tee</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ITee</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.trustonic.teeregistry</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ITeeRegistry</name>
             <instance>default</instance>
         </interface>
     </hal>
